@@ -37,7 +37,7 @@ describe('Server Configuration', () => {
     
     server.on('error', (error) => {
       expect(error).toBeDefined();
-      expect(error.code).toBe('EADDRINUSE')
+      expect(error.code).toBe('EADDRINUSE');
       done();
     });
     
